@@ -1,0 +1,9 @@
+/* Możesz zostawić pusty na teraz,
+   lub dodać style wspólne dla innych stron, ale bez tła */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* lub inne neutralne tło */
+  color: #333;
+}

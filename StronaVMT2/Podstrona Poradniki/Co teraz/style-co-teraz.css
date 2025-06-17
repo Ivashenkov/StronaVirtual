@@ -1,0 +1,82 @@
+/* Tło tylko dla co-teraz.html */
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg'); /* obrazek w tym samym folderze */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Duży napis na środku */
+.main-title {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+  text-align: center;
+  user-select: none;
+}
+
+/* Siatka 3x2, równo rozstawione */
+.tiles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 140px);
+  gap: 40px 40px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Pojedynczy kafelek */
+.tile {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.tile:hover {
+  background-color: rgba(255,215,0,0.9);
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Przycisk wstecz w lewym górnym rogu */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(255,215,0,0.9);
+  color: black;
+  transform: scale(1.05);
+}

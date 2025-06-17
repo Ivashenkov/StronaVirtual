@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>O mnie</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: url("images/tlo.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center; /* wyśrodkowanie poziome */
+    align-items: flex-start; /* start od góry */
+    padding: 40px 0;
+    position: relative; /* potrzebne do absolutnego przycisku */
+  }
+  .container {
+    max-width: 33vw; /* max 1/3 szerokości */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  h1, p {
+    margin: 50px 0;
+    font-size: 1.3rem; /* większa czcionka */
+    color: white;
+    /* czarna ramka (stroke) dla tekstu */
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+  }
+
+  /* Kafelek powrotu - ten sam styl co w kontakcie */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+    user-select: none;
+  }
+  .back-button:hover {
+    background-color: rgba(255, 215, 0, 0.9);
+    color: black;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+  <a href="../index.html" class="back-button">&larr; Powrót do strony głównej</a>
+  <div class="container">
+    <h1>Siema!</h1>
+    <p>Jeżeli tutaj trafiłeś to prawdopodobnie już mnie znasz z jakiegoś powodu, ale powiem kilka słów o sobie.</p>
+    <p>Jestem Kuba, ale mój nick w grze oraz <a href="https://www.youtube.com/@IvashMetińczyk" target="_blank" rel="noopener noreferrer">YT</a> to Ivashenkov.</p>
+    <p>Od zawsze uwielbiałem gry komputerowe, głownie RPG, MMO i FPS'y. 
+      W metina zagrałem pierwsyz raz jakoś w 2010 roku, przy czym na Virtualu w roku 2011.
+    </p>  
+    <p>W międzyczasie pojawiały się naprawde różne serwery w różnym typie,</p>
+    <p>ale <a href="https://www.virtualmt2.pl" target="_blank" rel="noopener noreferrer">Virtual</a> okazał się być tym który łączy cechy wszystkich serwerów</p>
+    <p>na których jakkolwiek dobrze mi się grało.</p>
+    <p>Szybki exp? Jest! Różnorodne EQ? Jest! Wysoki poziom trudności? Jest!</p>
+    <p>No i tak to już się stało, że zostałem. Oczywiście nie grałem cały czas, bo było wiele przerw,</p>
+    <p>ale zawsze coś mnie ściągało z powrotem.</p>
+    <p>W grudniu 2023r wróciłem na dobre tworzą dobrze rozwinięte postacie. Niestety zawsze brakowało mi miejsca w którym dowiem się absolutnei wszystkiego.</p>
+    <p>Wikipedia mówi wiele, ale nie wszystko. Pojedyńcze poradniki na YT omawiają tylko konkretne elementy gry.</p>
+    <p>Tak więc.. postanowiłem to połączyć i stworzyć tę stronę.</p>
+    <p>Mam nadzieję, że przyda Ci się tak samo jak mogłaby dwa lata temu przydać się mi!</p>
+    <p>Widzimy się w gierce!</p>
+  </div>
+</body>
+</html>
