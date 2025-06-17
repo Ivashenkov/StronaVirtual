@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VirtualMt2 - Strefa Youtube</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Kafelki takie jak w kolumnach index.html */
+    .back-link {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 0 5px #000;
+      margin: 20px;
+      transition: background-color 0.3s;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .yt-header {
+      color: white;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .yt-list {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .creator {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 0 0 5px #000;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 2px solid white;
+    }
+
+    .info h3 {
+      margin: 0 0 5px 0;
+    }
+
+    .info a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .info p {
+      margin: 5px 0 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="back-link">← Powrót do strony głównej</a>
+
+  <h1 class="yt-header">VirtualMt2 - Strefa Youtube</h1>
+
+  <div class="yt-list">
+    <div class="creator">
+      <img class="profile-pic" src="images/creator1.jpg" alt="Twórca 1" />
+      <div class="info">
+        <h3>Twórca 1</h3>
+        <a href="https://youtube.com/creator1" target="_blank" rel="noopener noreferrer">Kanał YouTube</a>
+        <p>Opis twórczości twórcy numer 1 — co nagrywa, jak często itd.</p>
+      </div>
+    </div>
+
+    <div class="creator">
+      <img class="profile-pic" src="images/creator2.jpg" alt="Twórca 2" />
+      <div class="info">
+        <h3>Twórca 2</h3>
+        <a href="https://youtube.com/creator2" target="_blank" rel="noopener noreferrer">Kanał YouTube</a>
+        <p>Opis twórczości twórcy numer 2 — jakie materiały tworzy, styl itd.</p>
+      </div>
+    </div>
+
+    <!-- Dodaj więcej twórców tutaj -->
+  </div>
+
+</body>
+</html>
